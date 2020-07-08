@@ -258,6 +258,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #ee549a;
 }
 
+#emphasis{
+  transform: scale(1.3);
+  color: #00ADB5 !important;
+}
+
 @media screen and (max-width: 992px) {
   #fh5co-header .navbar-brand {
     margin-left: 20px;
