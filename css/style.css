@@ -296,6 +296,7 @@ background: linear-gradient(138deg, rgba(238,84,154,1) 0%, rgba(9,9,121,1) 35%, 
     border-radius: 10px;
     display: flex;
     justify-content: center;
+    border: none;
 }
 
 .iconholder{
