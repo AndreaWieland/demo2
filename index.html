@@ -28,6 +28,9 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href="https://fonts.googleapis.com/css?family=Quicksand|Rock+Salt|&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -50,6 +53,87 @@
 
 	</head>
 	<body>
+		<!-- payment pop-ups -->
+		<div class="modal fade" id="gold-local" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-body">
+					<div class="payframe"><iframe class="csched" scrolling="yes" src="https://checkout.square.site/buy/WRRZCVTAL4SKFU22TRITQ44C">
+					</iframe></div>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<div class="modal fade" id="gold-remote" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-body">
+					<div class="payframe"><iframe class="csched" scrolling="yes" src="		https://checkout.square.site/buy/3NL3CI46E6XXS5FI3IG45SMI"></iframe>
+					</iframe></div>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<div class="modal fade" id="silver-local" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-body">
+					<div class="payframe"><iframe class="csched" scrolling="yes" src="		https://checkout.square.site/buy/J5MDSALVB5AJPDNKXIXMDL7L">
+					</iframe></div>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<!--needs correct iframe links-->
+		<div class="modal fade" id="silver-remote" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-body">
+					<div class="payframe"><iframe class="csched" scrolling="yes" src="https://checkout.square.site/buy/LM6MT7ZNB7LSAOBPT26KL5Z3"></iframe>
+					</iframe></div>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<div class="modal fade" id="bronze-local" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-body">
+					<div class="payframe"><iframe class="csched" scrolling="yes" src="https://checkout.square.site/buy/VLKNSB5OZYWAEBLMA5FYKG4E">
+					</iframe></div>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<div class="modal fade" id="bronze-remote" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-body">
+					<div class="payframe"><iframe class="csched" scrolling="yes" src="https://checkout.square.site/buy/Q2AVCAHIWQII562U6I4KYUNM"></iframe>
+					</iframe></div>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		</div>
+
 	<header role="banner" id="fh5co-header">
 		<div class="container">
 			<div class="row">
@@ -66,6 +150,7 @@
 							<li><a href="#" data-nav-section="about"><span>About</span></a></li>
 							<li><a href="#" data-nav-section="services"><span>Services</span></a></li>
 							<li><a href="#" data-nav-section="pricing"><span>Pricing</span></a></li>
+							<li><a href="#" data-nav-section="bookClass"><span>Book A Class!</span></a></li>
 							<li><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
 						</ul>
 					</div>
@@ -206,9 +291,6 @@
 			</div>
 		</div>
 	</section>
-	<section>
-		<script type="text/javascript" src="https://api.schedulicity.com/public/widget/NSYBWL/embed"></script>
-	</section>
 
 	<section id="fh5co-services" data-section="services">
 		<div class="fh5co-services">
@@ -226,8 +308,8 @@
 								<span><i class="icon-fire"></i></span>
 							</div>
 							<div class="fh5co-post animate-box">
-								<h3>Semi-Private Training</h3>
-								<p>Prefer to train with a buddy? No problem. Semi-private sessions are 2-3 people with me towards similar goals. Programming is specific to your group, and you’ll receive all the feedback of 1:1 coaching in a more cost effective package.
+								<h3>Group Classes</h3>
+								<p>It's more fun with friends! I hold strength, agility, and flexibility classes every week. If you want a good time and a good sweat, <a href="#bookClass">I have classes for any experience level and schedule!</a>
 								</p>
 							</div>
 						</div>
@@ -287,64 +369,118 @@
       	<div class="container">
       		<div class="row">
 					<div class="col-md-12 section-heading text-center">
-							<h1 class="animate-box overimg" style="font-size: 80px; letter-spacing: 1.45">Pricing</h1>	
-							<div class="row">
-							<div class="col-md-8 col-md-offset-2 subtext animate-box">
-								<h3></h3>
-							</div>
-						</div>
+							<h1 class="animate-box overimg" style="font-size: 80px; font-weight: bold; letter-spacing: 1.05">Pricing</h1>	
 					</div>
 				</div>
       		<div class="row">
+				<div class="col-md-12 d-flex justify-content-center">
+					<div class="col-md-12 text-center animate-box service-description">
+						<h2>Individual Training Sessions</h2>
+						<h4>Get hour-long coaching sessions with me. I will develop a personalized training plan for your specific goals and be with you every step of the way</h4>
+						<h4>To encourage a commitment to your goals, I offer several discounted monthly packages. The more you show up, the more you save! </h4>
+						<h4>Now and always, I offer remote sessions for a greater discount. I been social distancing since before it was cool</h4>
+						<h4>Book your training package today, and I will reach out within 24 hours to schedule your first sessions!</h4>  
+					</div>
+				</div>
       			
       			<div class="col-md-4 text-center animate-box">
 					<div class="pricing__item">
-						<h3 class="pricing__title">Small Group</h3>
-						<div class="pricing__price"><small><i>From </i></small><span class="pricing_currency">$</span>55</div>
-						<p class="pricing__sentence">It's more fun with friends! Receive personalized training in a group of 2-4. Small group training packages can be bought weekly or monthly</p>
-						<br><br>
-						<ul class="pricing__feature-list">
-	                        <li class="pricing__feature">$55 per person per session 
-	                    </ul>
-						<p><a href="#contact" class="btn btn-primary btn-lg pricing__action">Get Started</a></p>
+						<h3 class="pricing__title">Gold Package</h3>
+						<p class="pricing__sentence">1-on-1 sessions, 12 sessions per month, paid monthly. <b><i>Best Value!</i></b></p>
+						<div class="package">
+							<h4>In-person package</h4>
+							<ul class="pricing__feature-list">
+								<li class="pricing__feature">In-person sessions with access to equipment</li>
+								<li>$840 (12 sessions @ $70 each)</li>
+							</ul>
+							<p class="pretty-button"><a class="pricing__action" data-toggle="modal" data-target="#gold-local">Buy</a></p>
+						</div>
+						<div class="package">
+							<h4>Remote package</h4>
+							<ul class="pricing__feature-list">
+								<li class="pricing__feature">Zoom sessions from the comfort of your own home</li>
+								<li>$780 (12 sessions @ $65 each)</li>
+							</ul>
+							<p class="pretty-button"><a class="pricing__action" data-toggle="modal" data-target="#gold-remote">Buy</a></p>
+						</div>
 					</div>	
-				  </div>
-				  <div class="col-md-4 text-center animate-box">
-					<div class="pricing__item">
-					  <h3 class="pricing__title">Individual</h3>
-					  <div class="pricing__price"><small><i>From </i></small><span class="pricing_currency">$</span>75</div>
-					  <p class="pricing__sentence">Get personalized 1-on-1 strength training with me. I offer the following packages:<br>(Monthly packages paid at the beginning of each month)</p>
-					  <ul class="pricing__feature-list">
-						  <li class="pricing__feature">$780 (12 sessions @ $65 each) <b><i>Best Value!</i></b></li>
-						  <li class="pricing__feature">$560 (8 sessions @ $70 each)
-							  </li>
-						  <li class="pricing__feature">$280 (4 sessions at $70 each)</li>
-						  <hr>
-						  <li class="pricing__feature">Just want to try? Individual sessions are $75 each</li>
-
-					  </ul>
-					  <p><a href="#contact" class="btn btn-primary btn-lg pricing__action">Get Started</a></p>
-				  </div>	
 				</div>
-      			<div class="col-md-4 text-center animate-box">
+				<div class="col-md-4 text-center animate-box">
 					<div class="pricing__item">
-						<h3 class="pricing__title">Remote</h3>
-						<div class="pricing__price"><small><i>From </i></small><span class="pricing_currency">$</span>100</div>
-						<p class="pricing__sentence">You can train with me from anywhere in the world! Personalised workout programs, updated weekly or monthly depending on individual need
-
-							Hybrid training (a mixture of in person and remote) also available.
-							</p>
-						<ul class="pricing__feature-list">
-							<li class="pricing__feature">Starting @ $100/month</li>
-							<li class="pricing__feature">Price depends on your plan</li>
-						</ul>
-						<p><a href="#contact" class="btn btn-primary btn-lg pricing__action">Get Started</a></p>
+						<h3 class="pricing__title">Silver Package</h3>
+						<p class="pricing__sentence">1-on-1 sessions, 8 sessions per month, paid monthly.</p>
+						<div class="package">
+							<h4>In-person package</h4>
+							<ul class="pricing__feature-list">
+								<li class="pricing__feature">In-person sessions with access to equipment</li>
+								<li>$560 (8 sessions @ $70 each)</li>
+							</ul>
+							<p class="pretty-button"><a class="pricing__action" data-toggle="modal" data-target="#silver-local">Buy</a></p>
+						</div>
+						<div class="package">
+							<h4>Remote package</h4>
+							<ul class="pricing__feature-list">
+								<li class="pricing__feature">Zoom sessions from the comfort of your own home</li>
+								<li>$520 (8 sessions @ $65 each)</li>
+							</ul>
+							<p class="pretty-button"><a class="pricing__action" data-toggle="modal" data-target="#silver-remote">Buy</a></p>
+						</div>
 					</div>	
-      			</div>
+				</div>
+				<div class="col-md-4 text-center animate-box">
+					<div class="pricing__item">
+						<h3 class="pricing__title">Bronze Package</h3>
+						<p class="pricing__sentence">1-on-1 sessions, 4 sessions per month, paid monthly.</p>
+						<div class="package">
+							<h4>In-person package</h4>
+							<ul class="pricing__feature-list">
+								<li class="pricing__feature">In-person sessions with access to equipment</li>
+								<li>$300 (4 sessions @ $75 each)</li>
+							</ul>
+							<p class="pretty-button"><a class="pricing__action" data-toggle="modal" data-target="#bronze-local">Buy</a></p>
+						</div>
+						<div class="package">
+							<h4>Remote package</h4>
+							<ul class="pricing__feature-list">
+								<li class="pricing__feature">Zoom sessions from the comfort of your own home</li>
+								<li>$280 (4 sessions @ $70 each)</li>
+							</ul>
+							<p class="pretty-button"><a class="pricing__action" data-toggle="modal" data-target="#bronze-remote">Buy</a></p>
+						</div>
+					</div>	
+				</div>
+				
       		</div>
       	</div>
      </section>
 	</section>	
+
+	<section class="bookClass" id="bookClass" data-section="bookClass">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="animate-box"><span>Group Classes</span></h2>
+					
+			</div>
+			<div class="row">
+				<div class="col-md-6 d-flex justify-content-center">
+					<div class="d-flex justify-content-center text-center classintro"><h4>I offer several group classes to get your body moving, and have fun with new friends! Check out my current offerings below, and book directly from the site!</h4>
+					<h4>There is something for all experience levels, and I offer sliding scale fees to make fitness accessible to all!</h4>
+					<h5><a href="https://stevierock.setmore.com/class" target="_blank">If the class list is not loading for you, click here to go directly to my booking page.</a></h5></div>
+					<div class="d-flex justify-content-center iconholder">						<h3><i class="fas fa-fire-alt fa-3x flameicon"></i></h3>
+					</div>
+					
+					
+				</div>
+				<div class="col-md-6 d-flex justify-content-center">
+
+					<div class="classframe"><iframe class="csched" scrolling="yes" src="https://stevierock.setmore.com/class">
+					</iframe></div>
+				</div>
+			</div>
+		</div>
+			
+	</section>
 
 	<!--<section id="fh5co-blog" data-section="blog">
 		<div class="fh5co-blog">
