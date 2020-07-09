@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 3px;
   bottom: -27px;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #12babb;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -159,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 2px;
 }
 #fh5co-header #navbar li a:hover {
-  color: #000;
+  color: hsl(284, 94%, 88%) !important;
 }
 #fh5co-header #navbar li a:hover span:before {
   visibility: visible;
@@ -175,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 480px) {
   #fh5co-header #navbar li.active a {
-    color: #ee549a;
+    color: #12babb;
   }
 }
 #fh5co-header #navbar li.active a span:before {
@@ -197,13 +197,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 992px) and (max-width: 480px) {
   #fh5co-header #navbar li.active a {
-    color: #ee549a;
+    color: #12babb;
   }
 }
 @media screen and (max-width: 992px) {
   #fh5co-header #navbar li.active a span {
     display: inline-block;
-    color: #ee549a;
+    color: #12babb;
   }
   #fh5co-header #navbar li.active a span:before {
     bottom: 0;
