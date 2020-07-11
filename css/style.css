@@ -1485,6 +1485,12 @@ background: linear-gradient(138deg, rgba(238,84,154,1) 0%, rgba(9,9,121,1) 35%, 
   border-radius: 50%;
 }
 
+.highlight{
+  font-style: italic;
+}
+
+
+
 .lillink{
   font-size: .75em;
   float: left;
